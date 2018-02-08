@@ -62,8 +62,8 @@ function draw(v, c, w, h) {
   blob = dataURItoBlob(dataURI);
 
   bodyFormData = new FormData();
-  bodyFormData.set('image', blob);
-  bodyFormData.set('token', 'INSERT YOUR TOKEN HERE');
+  bodyFormData.append('image', blob);
+  bodyFormData.append('token', 'INSERT YOUR TOKEN ID HERE');
 
   node = document.createElement('LI');
 
